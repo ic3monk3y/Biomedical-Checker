@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{125AF90D-BDFA-47C7-A4A0-10712BDAC103}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FivesCheckerMD</RootNamespace>
+    <AssemblyName>FivesCheckerMD</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>iconoFivesCheckador.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\Users\52331\Downloads\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="DPFPDevNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=696774c42ee28c57, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\DigitalPersona\One Touch SDK\.NET\Bin\DPFPDevNET.dll</HintPath>
+    </Reference>
+    <Reference Include="DPFPEngNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=7fe76e7adf19964b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\DigitalPersona\One Touch SDK\.NET\Bin\DPFPEngNET.dll</HintPath>
+    </Reference>
+    <Reference Include="DPFPGuiNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=d4f4a0bd9c559145, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\DigitalPersona\One Touch SDK\.NET\Bin\DPFPGuiNET.dll</HintPath>
+    </Reference>
+    <Reference Include="DPFPShrNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=d902fe275a8d6cf2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\DigitalPersona\One Touch SDK\.NET\Bin\DPFPShrNET.dll</HintPath>
+    </Reference>
+    <Reference Include="DPFPVerNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=4de0a9c4dcc83984, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\DigitalPersona\One Touch SDK\.NET\Bin\DPFPVerNET.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.5, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.8.5\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config.cs">
+      <DependentUpon>FivesEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Empresa.cs">
+      <DependentUpon>FivesEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FivesEntities.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FivesEntities.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FivesEntities.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FivesEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FivesEntities.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FivesEntities.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Function\ActEmpleado.cs" />
+    <Compile Include="Function\ActualizarApp.cs" />
+    <Compile Include="Function\CambioConfigFC.cs" />
+    <Compile Include="Function\Conexion.cs" />
+    <Compile Include="Function\ConfigINI.cs" />
+    <Compile Include="Function\DatosPersonal.cs" />
+    <Compile Include="Function\EmpViewModel.cs" />
+    <Compile Include="Function\Encrypt.cs" />
+    <Compile Include="Function\EstaPresente.cs" />
+    <Compile Include="Function\HuellaRegistro.cs" />
+    <Compile Include="Function\keyGen.cs" />
+    <Compile Include="Function\PendientesSincro.cs" />
+    <Compile Include="Function\Registr.cs" />
+    <Compile Include="Function\SincroEjec.cs" />
+    <Compile Include="Function\spActInfoApp.cs" />
+    <Compile Include="Function\SucViewModel.cs" />
+    <Compile Include="Function\ValidarVerAppViewModel.cs" />
+    <Compile Include="Huella.cs">
+      <DependentUpon>FivesEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Jornada.cs">
+      <DependentUpon>FivesEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JornadaD.cs">
+      <DependentUpon>FivesEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Personal.cs">
+      <DependentUpon>FivesEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Personas.cs">
+      <DependentUpon>FivesEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Registro.cs">
+      <DependentUpon>FivesEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Solicitud.cs">
+      <DependentUpon>FivesEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sucursales.cs">
+      <DependentUpon>FivesEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmConfig.Designer.cs">
+      <DependentUpon>frmConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmConfigContra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmConfigContra.Designer.cs">
+      <DependentUpon>frmConfigContra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CapturarHuella.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CapturarHuella.Designer.cs">
+      <DependentUpon>CapturarHuella.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CaptureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CaptureForm.Designer.cs">
+      <DependentUpon>CaptureForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmPopup.Designer.cs">
+      <DependentUpon>frmPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmRegistrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmRegistrar.Designer.cs">
+      <DependentUpon>frmRegistrar.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CapturarHuella.resx">
+      <DependentUpon>CapturarHuella.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CaptureForm.resx">
+      <DependentUpon>CaptureForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmConfig.resx">
+      <DependentUpon>frmConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmConfigContra.resx">
+      <DependentUpon>frmConfigContra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmPopup.resx">
+      <DependentUpon>frmPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmRegistrar.resx">
+      <DependentUpon>frmRegistrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.manifest" />
+    <None Include="config.ini" />
+    <EntityDeploy Include="FivesEntities.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>FivesEntities.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="FivesEntities.edmx.diagram">
+      <DependentUpon>FivesEntities.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Elements\Profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Elements\LogoFC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Elements\LogoBB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Elements\Cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Elements\profileRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Elements\fiveslogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Elements\iconoFivesCheckador.ico" />
+    <None Include="Elements\Minimizar %282%29.png" />
+    <None Include="Elements\usa-bigbang-logo-png.png" />
+    <Content Include="FivesEntities.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FivesEntities.edmx</DependentUpon>
+      <LastGenOutput>FivesEntities.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="FivesEntities.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FivesEntities.edmx</DependentUpon>
+      <LastGenOutput>FivesEntities.cs</LastGenOutput>
+    </Content>
+    <Content Include="iconoFivesCheckador.ico" />
+    <None Include="Resources\iconoFivesCheckador.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
